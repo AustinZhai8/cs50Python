@@ -18,7 +18,7 @@ def main():
     except FileNotFoundError:
         sys.exit("File does not exist")
     
-    loc_count = 0
+    count = 0
     for line in lines:
         stripped = line.strip()
         
@@ -28,9 +28,9 @@ def main():
         if stripped.startswith("#"):
             continue
         
-        loc_count += 1
+        count += 1
     
-    print(loc_count)
+    print(count)
 
 
 if __name__ == "__main__":
